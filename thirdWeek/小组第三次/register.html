@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>welcome!</title>
+<link rel="stylesheet" href="register.css" type="text/css" />
+
+</head>
+
+<body>
+ <div id="myDiv">
+      
+      <ul id="myNav">
+        <li id="register" class="active"><a href="register.html">Sign Up</a></li>
+        <li id="login"><a href="login.html">Log In</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Sign Up for Free</h1>
+          
+          <form id="myForm" action="/" method="post">
+          
+          <div id="usernameDiv">
+					
+					<input type="text" id="username" placeholder="Username" />
+					<span class="spanStyle" id="usernameSpan">*</span>
+				</div>
+				
+				<div id="passwordDiv">
+					
+					<input type="password" id="password" placeholder="Password" />
+					<span class="spanStyle" id="passwordSpan">*</span>
+				</div>
+				
+				<div id="repasswordDiv">
+					
+					<input type="password" id="repassword" placeholder="Repassword" />
+					<span class="spanStyle" id="repasswordSpan">*</span>
+				</div>
+				
+				<div id="mailboxDiv">
+					
+					<input type="text" id="mailbox" placeholder="Mailbox" />
+					<span class="spanStyle" id="mailboxSpan">*</span>
+				</div>
+				
+				<div id="phoneDiv">
+				
+					<input type="text" id="phone" placeholder="Phone" />
+					<span class="spanStyle" id="phoneSpan">*</span>
+				</div>
+				
+				<div id="vercodeDiv">
+					
+					<input type="text" id="vercode" placeholder="Vercode" />
+					<span class="spanStyle" id="vercodeSpan">*</span>
+				</div>
+
+          <input id="submit" type="submit" value="Get Started" />
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> 
+<script type="text/javascript" src="register.js"></script>
+</body>
+</html>

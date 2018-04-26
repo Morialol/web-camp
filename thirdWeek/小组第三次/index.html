@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hollo!</title>
+<style type="text/css">
+	body{
+    margin:0 auto;
+    text-align:center;
+    background-image: url(图片/OceanCurrents_ZH-CN13704695457_1920x1080.jpg);
+}
+	#hi {
+		color:#FCF7F7;
+		font-size: 100px;
+		font-family:quicksand;
+	}
+	#main{
+		padding-top: 200px;
+	}
+	a {
+		color: aliceblue;
+		margin: 20px;
+	    float: left;
+		font-size: 20px;
+		text-decoration: none;
+	}
+	a:hover {
+		color: aquamarine;
+	}
+	</style>
+</head>
+
+<body>
+
+<div id="ruturn">
+	<a href="register.html">☆-sign up-☆</a>
+	<a href="login.html">☆-login in-☆</a>
+</div>
+<div id="main">
+	<p id="hi">Hollo World!</p>
+</div>
+<script language="javascript">
+	var hi = document.getElementById("hi");
+	var col = new Array();
+	var pos = -1;
+	var num = 1;//用于记录周期
+	col[0] = "#e1f7e1";
+	col[1] = "#c3f2c3";
+	col[2] = "#a6f5a6";
+	col[3] = "#9ef79e";
+	col[4] = "#8bf58b";
+	col[5] = "#6bf76b";
+	function changecolor(){//改变颜色
+		if(num == 1){
+			pos++;
+			if(pos == 5){
+				num = 0;
+			}
+		}
+		else {
+			pos--;
+			if(pos == 0){
+				num = 1;
+			}
+		}
+		hi.style.color = col[pos];
+		setTimeout("changecolor()",300);
+		
+	}
+	window.onload=function(){
+		changecolor();
+	}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>welcome!</title>
+<link rel="stylesheet" href="login.css" type="text/css" />
+</head>
+
+<body>
+<div id="myDiv">
+      
+      <ul id="myNav">
+        <li class="tab"><a href="register.html">Sign Up</a></li>
+        <li class="tab active"><a href="login.html">Log In</a></li>
+      </ul>
+      
+      <div class="tab-content"> 
+      <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form id="myForm" action="/" method="post">
+          
+            <div id="usernameDiv">
+					
+					<input type="text" id="username" placeholder="Username" />
+					<span class="spanStyle" id="usernameSpan">*</span>
+				</div>
+				
+				<div id="passwordDiv">
+				
+					<input type="password" id="password" placeholder="Password" />
+					<span class="spanStyle" id="passwordSpan">*</span>
+				</div>
+				
+				<div id="vercodeDiv">
+					
+					<input type="text" id="vercode" placeholder="Vercode" />
+					<span class="spanStyle" id="vercodeSpan">*</span>
+				</div>
+          
+          <p><a href="#" id="forgot" onClick="alert('回去想想吧 ╮(๑•́ ₃•̀๑)╭')">Forgot Password?</a></p>
+         
+          <input id="user" type="button" value="Log In" />
+          
+          </form>
+          
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div>
+<script type="text/javascript" src="login.js"></script>
+</body>
+</html>
